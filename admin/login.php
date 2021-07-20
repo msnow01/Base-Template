@@ -40,54 +40,40 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php
-    $page_title="Log In";
-    include $dir."inc/header.php";
-    ?>
-    <body>
-        <div class="box-section white-bkgd">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>&nbsp;</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-2">
-                        <a title="Home" href="<?php echo $dir;?>home"><img src="<?php echo $dir.$logo_path;?>" width="75%"></a>
-                    </div>
-                    <div class="col-md-6">
-                        <?php echo $alert_message; ?>
-                        <h1>Log In</h1>
-                        <form method="post">
-                            <p>
-                                <label for="email" class="display-none">Email</label>
-                                <input type="text" placeholder="Email" name="email" class="form-control" required>
-                            </p>
-                            <p>
-                                <label for="password" class="display-none">Password</label>
-                                <input type="password" id="password" placeholder="Password" name="password" class="form-control" required>
-                            </p>
-                            <p class="form-check">
-                                <input name="showpass" id="showpass" type="checkbox" class="form-check-input" onclick="showpassword()">
-                                <label for="showpass" class="form-check-label">Show Password</label>
-                            </p>
-                            <p>&nbsp;</p>
-                            <p>
-                                <label for="submit" class="display-none">Submit</label>
-                                <input type="submit" name="submit" class="btn btn-dark">
-                            </p>
-                        </form>
-                    </div>
-                    <div class="col-md-2"></div>
-                </div>
+<?php
+include $dir."inc/header.php";
+include $dir."inc/menu.php";
+?>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <?php echo $alert_message; ?>
+                <h1>Log In</h1>
+                <form method="post">
+                    <p>
+                        <label for="email" class="display-none">Email</label>
+                        <input type="text" placeholder="Email" name="email" class="form-control" required>
+                    </p>
+                    <p>
+                        <label for="password" class="display-none">Password</label>
+                        <input type="password" id="password" placeholder="Password" name="password" class="form-control" required>
+                    </p>
+                    <p class="form-check">
+                        <input name="showpass" id="showpass" type="checkbox" class="form-check-input" onclick="showpassword()">
+                        <label for="showpass" class="form-check-label">Show Password</label>
+                    </p>
+                    <p>&nbsp;</p>
+                    <p>
+                        <label for="submit" class="display-none">Submit</label>
+                        <input type="submit" name="submit" class="btn btn-dark">
+                    </p>
+                </form>
             </div>
         </div>
-        <div class="fixed-bottom">
-            <?php include $dir."inc/footer.php"; ?>
-        </div>
-    </body>
+    </div>
+</body>
+<?php include $dir."inc/footer.php"; ?>
 </html>
 
 <script>

@@ -3,8 +3,9 @@
 <?php
 $dir="../";
 $page_title="Home";
-include $dir."inc/header.php";
 include $dir."inc/connection.php";
+include $dir."inc/functions.php";
+include $dir."inc/header.php";
 include $dir."inc/menu.php";
 ?>
 <body>
