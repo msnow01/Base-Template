@@ -1,6 +1,5 @@
 <?php
 $base_url = "https://".$_SERVER['HTTP_HOST']."/";
-include $dir."connection.php";
 include $dir."config.php";
 ?>
 
