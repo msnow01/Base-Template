@@ -1,0 +1,36 @@
+:root {
+    --light-grey: #F4F4F4;
+    --dark-grey: #666666;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--black);
+}
+
+.shadow {
+    filter: drop-shadow(3px 3px 3px var(--dark-grey));
+}
+
+footer {
+    color: var(--white);
+    font-size: 0.75em;
+    padding: 1%;
+    background-color: var(--black);
+    width: 100%;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--white);
+}
