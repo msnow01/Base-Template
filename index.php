@@ -2,9 +2,14 @@
 <html lang="en">
 <?php
 $dir="";
+$page_title="Home";
+include $dir."inc/connection.php";
+include $dir."inc/functions.php";
 include $dir."inc/header.php";
+include $dir."inc/menu.php";
 ?>
 <body>
-    <meta http-equiv="refresh" content="0; URL='<?php echo $base_url;?>home'" />
+    <h1 class="shadow">Hello World!</h1>
 </body>
+<?php include $dir."inc/footer.php"; ?>
 </html>
